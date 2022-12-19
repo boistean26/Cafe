@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAFE</title>
     <link rel="icon" type="images/png" href="./Images/pizza1.png">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CAFE/CSS/style.css">
 </head>
 
-<body>
+<body onload="getYear()">
     <header>
         <div class="conteiner-logo">
             <a href="./index.html">
@@ -44,9 +44,9 @@
                 </p>
                 <div class="galeria">
                     <img class="img-galeria" src="Images/pizza.3.jpg" alt="Pizza" />
-                    <img class="img-galeria" src="Images/descarga(1).jpg" alt="Pasta" />
+                    <img class="img-galeria" src="images/descarga (1).jpg" alt="Pasta" />
                     <img class="img-galeria" src="Images/ensalada.jpg" alt="Salate" />
-                    <img class="img-galeria" src="Images/descarga(3).jpg" alt="Napitki" />
+                    <img class="img-galeria" src="images/descarga (3).jpg" alt="Napitki" />
                 </div>
                 <p>
                     Disfruta una deliciosa pizza artesanal 100% artesanal. May be an image of pizza and text that
@@ -122,8 +122,9 @@
         </main>
     </section>
     <footer>
-        <h2> &#127829; Pizza Pronto 2021 &#169;</h2>
+        <h2> &#127829; Pizza Pronto 2021 &#169; <span id="god"></span></h2>
     </footer>
+    <script src="js/data.js"> </script>
 </body>
 
 </html>
