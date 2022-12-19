@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE</title>
+    <link rel="icon" type="images/png" href="../Images/pizza1.png">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <img src="../Images/pizza1.png" alt="logotip" width="50px">
+            </a>
+
+        </div>
+        <nav>
+            <a href="./menu.html">Menu</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="conteiner">
+        <aside>
+            <a href="pizza.html"> &#127829; Pizza</a>
+            <a href="pasta.html"> &#127837; Pasta</a>
+            <a href="Salati.html">&#127793; Salate</a>
+            <a href="Napitki.html">&#127865; Napitki</a>
+
+        </aside>
+        <main>
+            <h1>Contact</h1>
+            <hr />
+            <div class="conteiner-contact">
+                <div class="row">
+                    <div class="col-5 forma-contact">
+                        <h3 class="center">Ostaviti soobshenie &#9993;</h3>
+                        <form autocomplete="off" id="formular">
+                            <input type="text" name="nume" id="nume" placeholder="Family*" required /> <br>
+                            <input type="text" name="prenume" id="prenume" placeholder="Nombre*" required /> <br>
+                            <input type="email" name="email" id="email" placeholder="E-mail*" required /> <br>
+                            <input type="text" name="tema" id="tema" placeholder="Tema*" required /> <br>
+                            <textarea name="mesaj" id="mesaj" placeholder="Soobshenie" id="20" cols="30"
+                                rows="10"></textarea> <br>
+                            <input class="transmit" type="button" value="Otpraviti" onclick="send()" />
+                        </form>
+                    </div>
+                    <div class="col-5 telefon-contact">
+                        <h3 class="center">Kontaktnie dannie &#128222;</h3>
+                        <b>Oficina:</b>
+                        <a href="telefon"> +373 22-000-000 </a> <br> <br>
+                        <b>Comenzi:</b>
+                        <a href="Comenzi"> +373 78-000-001</a> <br> <br>
+                        <b>Serviciul Client:</b>
+                        <a href="ServiciulClient"> +373 68-001-002</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 adres-contact">
+                        <h3 class="center">Adres &#127968;</h3>
+                        <b>Chisinau:</b><span> Bd.Stefan Cel Mare 20</span><br> <br>
+                        <b>Chisinau:</b><span> Bd.Moscova 8 </span><br> <br>
+                        <b>Balti:</b><span> Str. Florilor 32 </span> <br> <br>
+                    </div>
+                    <div class="col-5">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.9087139540275!2d28.668610715396596!3d45.91313491139618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b7b4c32b0c3b4d%3A0xee91194cba6ff469!2sTaraclia%20State%20University!5e0!3m2!1ses!2ses!4v1669915750610!5m2!1ses!2ses"
+                            width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <footer>
+        <h2> &#127829; Pizza Pronto 2021 &#169;</h2>
+    </footer>
+    <script src="../js/send.js"></script>
+</body>
+
+</html>

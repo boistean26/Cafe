@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE</title>
+    <link rel="icon" type="images/png" href="../Images/pizza1.png">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <script src="../js/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <img src="../Images/pizza1.png" alt="logotip" width="50px">
+            </a>
+            <nav>
+                <a href="*">Menu</a>
+                <a href="*">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <aside>
+            <a href="*">Pizza</a>
+            <a href="*">Pasta</a>
+            <a href="*">Salate</a>
+            <a href="*">Napitki</a>
+
+        </aside>
+        <main>
+            <h1> Primenenie Java Script</h1>
+            <p id="rez"> Izmenenie razmer shrifta</p>
+            <button onclick="functie()">Meneatsea color</button>
+            <p id="rez1"> Izmenenie razmer shrifta</p>
+            <button onclick="functie1()">Meneatsea color</button>
+            <hr />
+            <p id="et1">Нажми на кнопку чтобы увидеть результат манипулирования содержанием элемента - удаление контента
+                (innerHTML)
+            </p>
+            <button onclick="functie2()">Click</button>
+            <p id="et2">Нажми на кнопку чтобы увидеть результат манипулирования содержанием элемента - изменение
+                контента
+                (innerHTML)</p>
+            <button onclick="functie3()">Click</button>
+            <hr>
+            <p id="et3">Нажми на кнопку чтобы увидеть результат манипулирования содержанием элемента - удаление контента
+                (innerHTML)
+            </p>
+            <button onclick="functie4()">Click</button>
+            <p id="et4">Нажми на кнопку чтобы увидеть результат манипулирования содержанием элемента - изменение
+                контента
+                (innerHTML)</p>
+            <button onclick="functie5()">Click</button>
+            <hr />
+            <h1> Variable </h1>
+            <p id="et5"></p>
+            <p id="et6"></p>
+            <p id="et7"></p>
+            <hr />
+            <h1> Variable </h1>
+            <p id="et8"></p>
+            <hr />
+            <p id="sal"></p>
+            <hr />
+            <h2> Pravilinii ves</h2>
+            <p id="ves">Vash ves doljen biti=</p>
+            <hr />
+            <H1>Data i vremea</H1>
+            <button onclick="getElementById('data').innerHTML= Date();">Data na segodnea:</button>
+            <p id="data"></p>
+            <hr />
+            <p id="nume2"> Menea zovut </p>
+            <input type="text" id="nume1" value="" />
+            <p id="dat1"> Mne </p>
+            <input type="number" id="dat2" value="" />
+            <hr />
+            <p>Нажмите кнопку для визуализации равенства двух значений - 5 равно с "5" как значение и как тип?</p>
+            <button onclick="Comparatie()">Click</button>
+            <p id="eta1"></p>
+            <hr />
+            <p>Выберите опцию определяющую ваш пол:</p>
+            <select id="aleg">
+                <option value="barbat">Мужской</option>
+                <option value="femeie">Женский</option>
+            </select>
+            <button onclick="Verificare()">Click</button>
+            <p id="pol"></p>
+
+
+        </main>
+
+        <footer>
+            <h2> &#127829; Pizza Pronto 2021 &#169;</h2>
+        </footer>
+
+        <script>
+            function Verificare() {
+                var alegere = document.getElementById("aleg").value;
+                var pol1 = (alegere == "barbat") ? "Gospodin!!!" : "Gospoja!!!";
+                document.getElementById("pol").innerHTML = "Salut" + " " + pol1;
+            }
+
+            function Comparatie() {
+                var x = 5;
+                document.getElementById("eta1").innerHTML = (x === 5);
+            }
+
+            document.getElementById("nume1").addEventListener("change",
+                function () {
+                    var valoare = document.getElementById("nume1").value;
+                    document.getElementById("nume2").innerHTML = document.getElementById("nume2").innerHTML + " " + valoare;
+                })
+            document.getElementById("nume1").addEventListener("change",
+                function () {
+                    var valoare = document.getElementById("nume1").value;
+                    document.getElementById("dat1").innerHTML = document.getElementById("nume2").innerHTML + " " + valoare + "let";
+                })
+
+
+            function ves(visota) {
+                return visota - 100;
+            }
+            document.getElementById("ves").innerHTML = document.getElementById("ves").innerHTML = "Vash ves doljen biti = " + ves(170) + " " + "kg";
+
+            function salariu(sal, adaos) {
+                return sal + adaos;
+            }
+            document.getElementById("sal").innerHTML = salariu(3000, 500)
+            var nume = "Petrov";
+            var familia = nume + " " + "Ivan";
+            var virsta = familia + " " + 35;
+            document.getElementById("et8").innerHTML = virsta;
+            var nume = "Ivanov", prenume = "Ivan", virsta = "40";
+            var nume = "Ivanov";
+            var prenume = "Ivan";
+            var virsta = "40";
+            document.getElementById("et5").innerHTML = nume;
+            document.getElementById("et6").innerHTML = prenume;
+            document.getElementById("et7").innerHTML = virsta;
+        </script>
+
+</body>
+
+</html>
